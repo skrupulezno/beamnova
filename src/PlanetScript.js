@@ -3,17 +3,17 @@ export default function script() {
     const ctx = canvas.getContext('2d');
 
     function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        canvas.width  = 500;
+        canvas.height = 200; 
     }
 
     window.addEventListener('resize', resizeCanvas);
     resizeCanvas();
 
     const chars = ['*', '.'];
-    const maxCharCount = 300;
+    const maxCharCount = 200;
     let foci = [];
-    const ringRadius = Math.min(canvas.width, canvas.height) / 8;
+    const ringRadius = Math.min(canvas.width, canvas.height) / 3.2;
     const ringWidth = ringRadius * 0.1;
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 2;
@@ -26,7 +26,7 @@ export default function script() {
             distance: ringRadius + (Math.random() - 0.5) * ringWidth ,
             size: (Math.random() * 0.5) + 0.5,
             char: chars[Math.floor(Math.random() * chars.length)],
-            speed: ((Math.random() - 0.5) * 0.002) 
+            speed: ((Math.random() - 0.5) * 0.01) 
         });
     }
 
@@ -41,10 +41,10 @@ export default function script() {
     for (let i = 0; i < maxCharCount; i++) {
         ovalFoci.push({
             angle: Math.random() * Math.PI * 2,
-            distance: ovalRadiusX + (Math.random() - 0.8) * ovalRadiusY ,
+            distance: ovalRadiusX + (Math.random() - 0.3) * ovalRadiusY ,
             size: (Math.random() * 0.5) + 0.2, // Меньший размер для овальных символов
             char: ovalChars[Math.floor(Math.random() * ovalChars.length)],
-            speed: (Math.random() - 0.5) * 0.005
+            speed: (Math.random() - 0.5) * 0.015
         });
     }
 
@@ -58,7 +58,7 @@ export default function script() {
         ovalFoci.forEach(focus => {
             focus.angle += focus.speed;
             const x = focus.distance * Math.cos(focus.angle) + centerX;
-            const y = ovalRadiusY * Math.sin(focus.angle) + (centerY * (ringWidth / 5.5)) - (x / 3);
+            const y = ovalRadiusY * Math.sin(focus.angle) + (centerY * (ringWidth / 3.5)) - (x / 3);
             const scale = 0.5 * (Math.sin(focus.angle) + 1);
             const alpha = 0.5 + 0.5 * Math.sin(focus.angle);
 
@@ -86,7 +86,7 @@ export default function script() {
             ctx.font = `${size}em monospace`;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            ctx.fillText("beamnova", centerX, centerY);
+            // ctx.fillText("beamnova", centerX, centerY);
         });
         
         requestAnimationFrame(draw);

@@ -6,7 +6,13 @@ function App() {
   return (
     <div className="App">
       <Planet/>
-      <h1>beamnova</h1>
+      <div className="main">
+        <header>
+          <img className="logo" src="./logo.svg" alt="logo beamnova" />
+          <h1>beamnova</h1>
+        </header>
+        
+      </div>
     </div>
   );
 }

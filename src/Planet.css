@@ -1,9 +1,24 @@
-.body {
-    margin: 0;
-    background: black;
-    color: white;
-    font-family: monospace;
+.planet {
+  background: rgb(0, 0, 0);
+  color: white;
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin: 20px 20px 0px 20px;
+
+  animation-duration: 3s;
+  animation-name: start;
+  transition-timing-function: ease;
+}
+
+@keyframes start {
+  from {
+    height: 100vh;
   }
-#canvas {
-    display: block;
+
+  to {
+    height: 200px;
+  }
 }

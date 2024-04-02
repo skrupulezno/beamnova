@@ -7,7 +7,7 @@ function Planet() {
         planetlogic();
       }, []);
     return (
-        <div className='body'>
+        <div className='planet'>
             <canvas id="canvas"></canvas>
         </div>
     );
