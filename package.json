@@ -1,6 +1,7 @@
 {
   "name": "beamnova",
   "version": "0.1.0",
+  "homepage": "https://skrupulezno.github.io/beamnova",
   "private": true,
   "dependencies": {
     "@tanstack/react-router": "^1.26.3",
