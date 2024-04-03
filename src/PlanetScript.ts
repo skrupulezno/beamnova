@@ -87,7 +87,7 @@ export default function script(): void {
             ctx!.fillStyle = 'rgba(255, 255, 255, 1)';
             ctx!.textAlign = 'center';
             ctx!.textBaseline = 'middle';
-            const centerX1 : number = centerX - 120; 
+            const centerX1 : number = centerX - 100; 
             const centerY1 : number = centerY - 7;
 
             //14
@@ -120,11 +120,19 @@ export default function script(): void {
             ctx!.fillText("|", centerX1 + 86, centerY1 + 17);
             ctx!.fillText("_", centerX1 + 71, centerY1 + 2);
             
-            ctx!.fillText("|", centerX1 + 125, centerY1 + 3);
-            ctx!.fillText("|", centerX1 + 125, centerY1 + 17);
-
             //n
-            ctx!.fillText("|", centerX1 + 86, centerY1 + 3);
+            ctx!.fillText("|", centerX1 + 119, centerY1 + 3);
+            ctx!.fillText("|", centerX1 + 126, centerY1 + 16);
+
+            ctx!.fillText("|", centerX1 + 133, centerY1 + 2);
+
+
+            //v
+            ctx!.fillText("|", centerX1 + 171, centerY1 + 2);
+            ctx!.fillText("|", centerX1 + 176, centerY1 + 2);
+
+            //a 
+            ctx!.fillText("_", centerX1 + 190, centerY1 + 2);
 
 
 
@@ -151,16 +159,46 @@ export default function script(): void {
 
             ctx!.fillText("-", centerX1 + 71, centerY1 + 13);
             //m
-            ctx!.fillText("_", centerX1 + 96, centerY1 - 8);
-            ctx!.fillText("_", centerX1 + 114, centerY1 - 8);
-            
+            ctx!.fillText("_", centerX1 + 91, centerY1 - 8);
+            ctx!.fillText("_", centerX1 + 109, centerY1 - 8);
+            ctx!.fillText("_", centerX1 + 115, centerY1 + 17);
+            //n
+            ctx!.fillText("_", centerX1 + 124, centerY1 - 8);
+            ctx!.fillText("_", centerX1 + 137, centerY1 - 8);
+            ctx!.fillText("_", centerX1 + 137, centerY1 + 17);
+            //o
+            ctx!.fillText("_", centerX1 + 144, centerY1 + 17);
+            ctx!.fillText("_", centerX1 + 151, centerY1 + 17);
+            ctx!.fillText("_", centerX1 + 158, centerY1 + 17);
+
+            ctx!.fillText("_", centerX1 + 144, centerY1 - 8);
+            ctx!.fillText("_", centerX1 + 151, centerY1 - 8);
+            ctx!.fillText("_", centerX1 + 158, centerY1 - 8);
+
+            ctx!.fillText("_", centerX1 + 150, centerY1 + 4);
+
+            //v
+            ctx!.fillText("_", centerX1 + 174, centerY1 + 17);
+
+            ctx!.fillText("_", centerX1 + 166, centerY1 - 8);
+            ctx!.fillText("_", centerX1 + 182, centerY1 - 8);
+
+
+            //a
+            ctx!.fillText("_", centerX1 + 191, centerY1 - 8);
+            ctx!.fillText("_", centerX1 + 198, centerY1 - 8);
+
+            ctx!.fillText("_", centerX1 + 185, centerY1 + 17);
+            ctx!.fillText("_", centerX1 + 192, centerY1 + 17);
+            ctx!.fillText("_", centerX1 + 199, centerY1 + 17);
+
+            ctx!.fillText("-", centerX1 + 192, centerY1 + 13);
 
             //17
             ctx!.font = '17px Arial';
             ctx!.fillText("_", centerX1 + 6.7, centerY1 - 30);
             ctx!.fillText(",", centerX1 + 14, centerY1 + 14);
             ctx!.fillText("_", centerX1 + 23, centerY1 + 14);
-            
             //e
             
             
@@ -174,18 +212,33 @@ export default function script(): void {
             //a
             ctx!.fillText("\\", centerX1 + 84, centerY1 + 3);
             //m
-            ctx!.fillText("\\", centerX1 + 102, centerY1 + 3);
-            ctx!.fillText("\\", centerX1 + 120, centerY1 + 3);
-            ctx!.fillText("/", centerX1 + 108, centerY1 + 3);
+            ctx!.fillText("\\", centerX1 + 97, centerY1 + 3);
+            ctx!.fillText("\\", centerX1 + 115, centerY1 + 3);
+            ctx!.fillText("/", centerX1 + 103, centerY1 + 3);
 
-            ctx!.fillText("/", centerX1 + 96, centerY1 + 17);
-            ctx!.fillText("\\", centerX1 + 102, centerY1 + 17);
-            ctx!.fillText("/", centerX1 + 108, centerY1 + 17);
-            ctx!.fillText("\\", centerX1 + 114, centerY1 + 17);
-
+            ctx!.fillText("/", centerX1 + 91, centerY1 + 17);
+            ctx!.fillText("\\", centerX1 + 97, centerY1 + 17);
+            ctx!.fillText("/", centerX1 + 103, centerY1 + 17);
+            ctx!.fillText("\\", centerX1 + 109, centerY1 + 17);
+            ctx!.fillText("\\", centerX1 + 119, centerY1 + 17);
             //n
-            ctx!.fillText("\\", centerX1 + 140, centerY1 + 3);
-            ctx!.fillText("\\", centerX1 + 136, centerY1 + 17);
+            ctx!.fillText("\\", centerX1 + 131, centerY1 + 4);
+            ctx!.fillText("\\", centerX1 + 131, centerY1 + 17);
+            //o
+            ctx!.fillText("/", centerX1 + 138, centerY1 + 4);
+            ctx!.fillText("\\", centerX1 + 138, centerY1 + 17);
+
+            ctx!.fillText("\\", centerX1 + 162, centerY1 + 4);
+            ctx!.fillText("/", centerX1 + 162, centerY1 + 17);
+
+            //v
+            ctx!.fillText("\\", centerX1 + 167, centerY1 + 17);
+            ctx!.fillText("/", centerX1 + 180, centerY1 + 17);
+            ctx!.fillText("/", centerX1 + 184, centerY1 + 4);
+
+            //a 
+            ctx!.fillText("\\", centerX1 + 205, centerY1 + 4);
+            ctx!.fillText("/", centerX1 + 205, centerY1 + 17);
         
         requestAnimationFrame(draw);
     }
