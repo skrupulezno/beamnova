@@ -1,12 +1,12 @@
 .planet {
-  background: rgb(0, 0, 0);
+  background: rgb(6, 20, 52);
   color: white;
   font-family: monospace;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 30px;
-  margin: 20px 20px 0px 20px;
+  margin: 0px 20px 0px 20px;
 
   animation-duration: 3s;
   animation-name: start;

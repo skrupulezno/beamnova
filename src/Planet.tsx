@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Planet.css';
-import planetlogic from './PlanetScript'
+import planetlogic from './PlanetScript';
 
 function Planet() {
     useEffect(() => {

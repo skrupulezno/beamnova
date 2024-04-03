@@ -1,14 +1,23 @@
-* {
-    background: rgb(46, 46, 46);
+.logo-label {
+    color: rgba(197, 25, 45, 1);
+}
+
+.PlanetConteiner {
+    padding-top: 20px;
+}
+
+a {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
-    animation-name: start2;
-    animation-duration: 3s;
+    outline: none;
+    text-decoration: none;
+    color: none;
 }
 
-h1 {
-    color: rgba(197, 25, 45, 1);
+p {
+    color: white;
+    font-weight: 400;
 }
 
 .main {
@@ -21,18 +30,58 @@ h1 {
     width: 50px;
     
 }
-header {
+
+.logo-item {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;;
+    flex-direction: row; 
 }
 
-@keyframes start2 {
-    from {
-        background: rgb(0, 0, 0);
-    }
-  
-    to {
-        background: rgb(46, 46, 46);
-    }
+.header-item {
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.header-item__list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    font-size: 20px;
+    flex-wrap:nowrap;
+}
+
+.main-content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer {
+    height: 150px;
+    background-color: black;
+    width: 100vw;
+}
+
+
+a:active {
+    text-decoration: none;
   }
+   
+  a:link {
+   text-decoration: none;
+  }
+
+.card {
+    width: 300px;
+    flex-wrap: wrap;
+    
+}
+
+body { overflow-x: hidden; }
