@@ -6,6 +6,10 @@
     padding-top: 20px;
 }
 
+.App {
+    background-color:rgb(6, 5, 34);
+}
+
 a {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
@@ -85,3 +89,10 @@ a:active {
 }
 
 body { overflow-x: hidden; }
+
+
+@media(max-width: 600px) {
+    Planet {
+        visibility: hidden;
+    }
+}

@@ -10,7 +10,9 @@
 
   animation-duration: 3s;
   animation-name: start;
-  transition-timing-function: ease;
+  transition-timing-function: ease-in;
+
+  overflow: hidden;
 }
 
 @keyframes start {
