@@ -11,7 +11,7 @@ export default function script(): void {
     resizeCanvas();
 
     const chars = ['*','.'];
-    const maxCharCount = 180;
+    const maxCharCount = 120;
     let foci: {angle: number; distance: number; size: number; char: string; speed: number}[] = [];
     const ringRadius = Math.min(canvas.width, canvas.height) / 3.2;
     const ringWidth = ringRadius * 0.1;

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Children } from 'react';
 import './App.css';
 import Planet from './Planet';
+import Button from './Button';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       </div>
       <div className="main">
         <header className='header'>
+          <Button>{"hello"}</Button>
         </header>
         <div className="main-content">
           <div className="card">
