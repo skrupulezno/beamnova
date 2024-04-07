@@ -11,36 +11,37 @@ export default function script(): void {
     resizeCanvas();
 
     const chars = ['*','.'];
-    const maxCharCount = 180;
+    const maxCharCount = 120;
     let foci: {angle: number; distance: number; size: number; char: string; speed: number}[] = [];
     const ringRadius = Math.min(canvas.width, canvas.height) / 3.2;
     const ringWidth = ringRadius * 0.1;
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 2;
-    const res = Math.max(canvas.width, canvas.height) / Math.min(canvas.width, canvas.height);
-    // Инициализация точек для кольца
-    // Дополнительные параметры для овала
+
     const ovalRadiusX = ringRadius  * 2.5;
     const ovalRadiusY = ringRadius *  0.4 + 10;
-    const ovalChars = chars;  // Можно использовать другие символы для овала
+    const ovalChars = chars; 
 
-    // Инициализация точек для овала
     let ovalLabel: {angle: number; distance: number; size: number; char: string; speed: number}[] = [];
     let ovalFoci: {angle: number; distance: number; size: number; char: string; speed: number}[] = [];
-    for (let i = 0; i < maxCharCount; i++) {
+
+    for (let i = 0; i < 100; i++) {
         foci.push({
             angle: Math.random() * Math.PI * 2,
             distance: ringRadius + (Math.random() - 0.5) * ringWidth ,
             size: (Math.random() * 0.5) + 0.5,
             char: chars[Math.floor(Math.random() * chars.length)],
-            speed: ((Math.random() - 0.5) * 0.01) 
+            speed: ((Math.random() - 0.5) * 0.005) 
         });
+    }
+
+    for (let i = 0; i < maxCharCount; i++) {
         ovalFoci.push({
             angle: Math.random() * Math.PI * 2,
             distance: ovalRadiusX + (Math.random() - 0.3) * ovalRadiusY ,
             size: (Math.random() * 0.5) + 0.2, // Меньший размер для овальных символов
             char: ovalChars[Math.floor(Math.random() * ovalChars.length)],
-            speed: (Math.random() - 0.5) * 0.015
+            speed: (Math.random() - 0.5) * 0.005
         });
         ovalLabel.push({
             angle: Math.random() * Math.PI * 2,

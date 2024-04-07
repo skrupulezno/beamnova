@@ -4,6 +4,7 @@
   "homepage": "https://skrupulezno.github.io/beamnova",
   "private": true,
   "dependencies": {
+    "@pbe/react-yandex-maps": "^1.2.5",
     "@tanstack/react-router": "^1.26.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -16,6 +17,7 @@
     "npm": "^10.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
     "react-scripts": "5.0.1",
     "scrollmagic": "^2.0.8",
     "typescript": "^4.9.5",

@@ -1,0 +1,59 @@
+button {
+    margin-top: 25px;
+    border-radius: 40px;
+    color: aliceblue;
+    height: 37px;
+    padding: 20px;
+    width: 140px;
+    border: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.Auth {
+    background-color: rgba(242, 181, 13, 0.1);
+    width: 110px;
+
+}
+
+.Auth:hover {
+    background-color: rgb(113, 63, 18)
+}
+
+.About {
+    background-color: rgba(241, 89, 0, 0.1);
+    width: 120px;
+
+}
+
+.About:hover {
+    background-color: rgb(124, 45, 18)
+}
+
+.Project {
+    background-color: rgba(85, 11, 34, 0.35);
+    width: 200px;
+
+}
+
+.Project:hover {
+    background-color: rgb(136, 19, 55)
+}
+
+.Blog {
+    background-color: rgba(7, 70, 52, 0.3);
+    width: 200px;
+
+}
+
+.Blog:hover {
+    
+    background-color: rgb(6, 78, 59);
+}
