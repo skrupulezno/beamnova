@@ -11,8 +11,7 @@
 }
 
 a {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
+ 
     font-style: normal;
     outline: none;
     text-decoration: none;
@@ -47,8 +46,9 @@ p {
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .header-item__list {
@@ -57,7 +57,7 @@ p {
     gap: 30px;
     align-items: center;
     font-size: 20px;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
 }
 
 .main-content {
@@ -71,6 +71,7 @@ p {
     height: 150px;
     background-color: black;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 
@@ -91,8 +92,32 @@ a:active {
 body { overflow-x: hidden; }
 
 
-@media(max-width: 600px) {
+@media(max-width: 800px) {
     Planet {
         visibility: hidden;
+        overflow-x: hidden;
     }
+
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.header-container {
+    display: flex;
+    gap: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.map-container {
+    width: 600;
+    margin-top: 30px;
+}
+
+ul {
+    color: aliceblue;
 }

@@ -24,3 +24,9 @@
     height: 200px;
   }
 }
+
+@media(max-width: 800px) {
+  #canvas {
+      overflow-x: hidden;
+  }
+}
