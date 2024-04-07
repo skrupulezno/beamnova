@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/beamnova/static/css/main.c4a592c2.css",
-    "main.js": "/beamnova/static/js/main.b724aee8.js",
+    "main.css": "/beamnova/static/css/main.b60bf765.css",
+    "main.js": "/beamnova/static/js/main.75b7bbb2.js",
     "index.html": "/beamnova/index.html",
-    "main.c4a592c2.css.map": "/beamnova/static/css/main.c4a592c2.css.map",
-    "main.b724aee8.js.map": "/beamnova/static/js/main.b724aee8.js.map"
+    "main.b60bf765.css.map": "/beamnova/static/css/main.b60bf765.css.map",
+    "main.75b7bbb2.js.map": "/beamnova/static/js/main.75b7bbb2.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4a592c2.css",
-    "static/js/main.b724aee8.js"
+    "static/css/main.b60bf765.css",
+    "static/js/main.75b7bbb2.js"
   ]
 }
